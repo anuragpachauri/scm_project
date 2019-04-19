@@ -184,4 +184,59 @@ void menu()
     
 }
 
+void build()
+
+{
+    
+    
+    system("cls");
+    
+    // highvideo();
+    
+    printf("Build The Table");
+    
+    cout<<endl;
+    
+    //normvideo();
+    
+    cout<<"maximum number of entries  -----  >  20"<<endl;
+    
+    cout<<"how many do you want    ----->";
+    
+    cin>>num;
+    
+    cout<<"Enter The Following Items"<<endl;
+    
+    for(int i=0;i<=num-1;i++)
+        
+    {
+        
+        cout<<" Name  ";
+        
+        cin>>emp[i].name;
+        
+        cout<<"Code  ";
+        
+        cin>>emp[i].code;
+        
+        cout<<"Designation  ";
+        
+        cin>>emp[i].designation;
+        
+        cout<<"Years of Experience  ";
+        
+        cin>>emp[i].exp;
+        
+        cout<<"Age  ";
+        
+        cin>>emp[i].age;
+        
+    }
+    
+    cout<<"going to main menu";
+    
+    Sleep(500);
+    
+}
+
 
