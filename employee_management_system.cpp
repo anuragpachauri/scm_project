@@ -280,4 +280,53 @@ void  list()
     getch();
     
 }
+void insert()
+
+{
+    
+    system("cls");
+    
+    int i=num;
+    
+    num+=1;
+    
+    // highvideo();
+    
+    printf("Insert New Record");
+    
+    cout<<endl;
+    
+    //normvideo();
+    
+    cout<<"Enter The Following Items"<<endl;
+    
+    cout<<"Name  ";
+    
+    cin>>emp[i].name;
+    
+    cout<<"Code  ";
+    
+    cin>>emp[i].code;
+    
+    cout<<"Designation  ";
+    
+    cin>>emp[i].designation;
+    
+    cout<<"Years of Experience  ";
+    
+    cin>>emp[i].exp;
+    
+    cout<<"Age  ";
+    
+    cin>>emp[i].age;
+    
+    cout<<endl<<endl;
+    
+    cout<<"going to main menu";
+    
+    Sleep(500);
+    
+    
+}
+
 
