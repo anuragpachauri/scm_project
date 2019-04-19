@@ -128,3 +128,60 @@ int main()
     
 }
 
+void menu()
+
+{
+    
+    system("cls");
+    
+    // highvideo();
+    
+    cout<<"          ";
+    
+    printf("\n*****  Employees Management System 1.0 ***** ");
+    
+    
+    
+    //normvideo();
+    
+    cout<<endl;
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  b---->Built The Employee Table ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  l---->List The Employee Table  ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  i---->Insert New Entry        ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  d---->Delete An Entry         ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  e---->Edit An Entry           ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  s---->Search Arecord          ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  n---->Sort The Table          ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\t\t Press  q---------->Quit Program              ";
+    
+    cout<<"             ";
+    
+    cout<<"\n\n \t\t Select Your Option Please ====> ";
+    
+}
+
+
