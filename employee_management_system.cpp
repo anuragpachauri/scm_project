@@ -22,3 +22,24 @@
 
 using namespace std;
 
+struct employee
+
+{
+    
+    char name[20];
+    
+    long int code;
+    
+    char designation[20];
+    
+    int exp;
+    
+    int age;
+    
+};
+
+int num;
+
+employee emp[max],tempemp[max],sortemp[max],sortemp1[max];
+
+
