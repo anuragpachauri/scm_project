@@ -239,4 +239,45 @@ void build()
     
 }
 
+void  list()
+
+{
+    
+    system("cls");
+    
+    // highvideo();
+    
+    printf("       ********List The Table********");
+    
+    cout<<endl;
+    
+    //normvideo();
+    
+    cout<<"     Name     Code     Designation     Years(EXP)     Age "<<endl;
+    
+    cout<<"    ------------------------------------------------------"<<endl;
+    
+    for(int i=0;i<=num-1;i++)
+        
+    {
+        
+        cout<<setw(13)<<emp[i].name;
+        
+        cout<<setw(6)<<emp[i].code;
+        
+        cout<<setw(15)<<emp[i].designation;
+        
+        cout<<setw(10)<<emp[i].exp;
+        
+        cout<<setw(15)<<emp[i].age;
+        
+        cout<<endl;
+        
+    }
+    
+    cout<<"going to main menu";
+    
+    getch();
+    
+}
 
