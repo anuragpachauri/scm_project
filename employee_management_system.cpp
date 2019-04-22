@@ -415,4 +415,126 @@ void deletes()
     }
     
 }
+void edit()
+
+{
+    
+    system("cls");
+    
+    int jobcode;
+    
+    // highvideo();
+    
+    printf("          Edit An Entry           ");
+    
+    cout<<endl;
+    
+    cout<<endl;
+    
+    int i;
+    
+    void editmenu();
+    
+    void editname(int);
+    
+    void editcode(int);
+    
+    void editdes(int);
+    
+    void editexp(int);
+    
+    void editage(int);
+    
+    char option;
+    
+    //normvideo();
+    
+    cout<<"Enter An jobcode To Edit An Entry----  ";
+    
+    cin>>jobcode;
+    
+    editmenu();
+    
+    for(i=0;i<=num-1;i++)
+        
+    {
+        
+        if(emp[i].code==jobcode)
+            
+        {
+            
+            
+            while((option=cin.get())!='q')
+                
+            {
+                
+                switch(option)
+                
+                {
+                        
+                    case 'n':
+                        
+                        editname(i);
+                        
+                        break;
+                        
+                    case 'c':
+                        
+                        editcode(i);
+                        
+                        break;
+                        
+                    case 'd':
+                        
+                        editdes(i);
+                        
+                        break;
+                        
+                    case 'e':
+                        
+                        editexp(i);
+                        
+                        break;
+                        
+                    case 'a':
+                        
+                        editage(i);
+                        
+                        break;
+                        
+                }
+                
+                editmenu();
+                
+            }
+            
+        }
+        
+    }
+    
+}
+
+void editmenu()
+
+{
+    
+    system("cls");
+    
+    cout<<"        What Do You Want To edit";
+    
+    cout<<"          n--------->Name ";
+    
+    cout<<"          c--------->Code ";
+    
+    cout<<"          d--------->Designation";
+    
+    cout<<"          e--------->Experience ";
+    
+    cout<<"          a--------->Age        ";
+    
+    cout<<"              q----->QUIT                            ";
+    
+    cout<<"   Options Please ---->>>  ";
+    
+}
 
