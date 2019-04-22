@@ -329,4 +329,90 @@ void insert()
     
 }
 
+void deletes()
+
+{
+    
+    system("cls");
+    
+    // highvideo();
+    
+    int code;
+    
+    int check;
+    
+    printf("Delete An Entry");
+    
+    //normvideo();
+    
+    cout<<endl;
+    
+    cout<<"Enter An JobCode To Delete That Entry  ";
+    
+    cin>>code;
+    
+    int i;
+    
+    for(i=0;i<=num-1;i++)
+        
+    {
+        
+        if(emp[i].code==code)
+            
+        {
+            
+            check=i;
+            
+        }
+        
+    }
+    
+    for(i=0;i<=num-1;i++)
+        
+    {
+        
+        if(i==check)
+            
+        {
+            
+            continue;
+            
+        }
+        
+        else
+            
+        {
+            
+            if(i>check)
+                
+            {
+                
+                tempemp[i-1]=emp[i];
+                
+            }
+            
+            else
+                
+            {
+                
+                tempemp[i]=emp[i];
+                
+            }
+            
+        }
+        
+    }
+    
+    num--;
+    
+    
+    for(i=0;i<=num-1;i++)
+        
+    {
+        
+        emp[i]=tempemp[i];
+        
+    }
+    
+}
 
