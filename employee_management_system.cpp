@@ -349,4 +349,14 @@ void editcode(int i)
     
 }
 
+void editdes(int i)
+
+{
+    
+    cout<<"enter new designation----->  ";
+    
+    cin>>emp[i].designation;
+    
+}
+
 
