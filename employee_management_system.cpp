@@ -357,6 +357,62 @@ void editdes(int i)
     
     cin>>emp[i].designation;
     
+       
 }
+
+
+void search()
+
+{
+    
+    system("cls");
+    
+    // highvideo();
+    
+    printf("Welcome To Search Of Employee Database ");
+    
+    //normvideo();
+    
+    cout<<endl;
+    
+    cout<<endl;
+    
+    int jobcode;
+    
+    cout<<"You Can Search Only By Jobcode Of An Employee";
+    
+    cout<<"Enter Code Of An Employee                    ";
+    
+    cin>>jobcode;
+    
+    for(int i=0;i<=num-1;i++)
+        
+    {
+        
+        if(emp[i].code==jobcode)
+            
+        {
+            
+            
+            cout<<"     Name     Code     Designation     Years(EXP)     Age ";
+            
+            cout<<"     ------------------------------------------------------                                  ";
+            
+            cout<<setw(13)<<emp[i].name;
+            
+            cout<<setw(6)<<emp[i].code;
+            
+            cout<<setw(15)<<emp[i].designation;
+            
+            cout<<setw(10)<<emp[i].exp;
+            
+            cout<<setw(15)<<emp[i].age;
+            
+            cout<<endl;
+            
+        }
+        
+        
+    }
 
 
