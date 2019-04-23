@@ -329,4 +329,14 @@ void insert()
     
 }
 
+void editname(int i)
+
+{
+    
+    cout<<"Enter New Name----->  ";
+    
+    cin>>emp[i].name;
+    
+}
+
 
