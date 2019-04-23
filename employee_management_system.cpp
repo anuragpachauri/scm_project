@@ -339,4 +339,14 @@ void editname(int i)
     
 }
 
+void editcode(int i)
+
+{
+    
+    cout<<"Enter New Job Code----->  ";
+    
+    cin>>emp[i].code;
+    
+}
+
 
