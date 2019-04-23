@@ -414,5 +414,12 @@ void search()
         
         
     }
+    cout<<"going to main menu";
+    
+    getch();
+    
+    
+    
+}
 
 
