@@ -423,3 +423,84 @@ void search()
 }
 
 
+void sort()
+
+{
+    
+    system("cls");
+    
+    // highvideo();
+    
+    printf("Sort The Databse By JobCode");
+    
+    //normvideo();
+    
+    void sortmenu();
+    
+    void sortname();
+    
+    void sortcode();
+    
+    void sortdes();
+    
+    void sortexp();
+    
+    char option;
+    
+    void sortage();
+    
+    
+    cout<<endl;
+    
+    cout<<endl;
+    
+    sortmenu();
+    
+    while((option=cin.get())!='q')
+        
+    {
+        
+        switch(option)
+        
+        {
+                
+            case 'n':
+                
+                sortname();
+                
+                break;
+                
+            case 'c':
+                
+                sortcode();
+                
+                break;
+                
+            case 'd':
+                
+                sortdes();
+                
+                break;
+                
+            case 'e':
+                
+                sortexp();
+                
+                break;
+                
+            case 'a':
+                
+                sortage();
+                
+                break;
+                
+        }
+        
+        sortmenu();
+        
+    }
+    
+}
+
+
+
