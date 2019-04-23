@@ -538,3 +538,421 @@ void editmenu()
     
 }
 
+void sortmenu()
+
+{
+
+    system("cls");
+
+    cout<<"          What Do You Want To edit";
+
+    cout<<"          n--------->Name         ";
+
+    cout<<"          c--------->Code         ";
+
+    cout<<"          d--------->Designation  ";
+
+    cout<<"          e--------->Experience   ";
+
+    cout<<"          a--------->Age          ";
+
+    cout<<"                               q----->QUIT            ";
+
+    cout<<"   Options Please ---->>>  ";  }
+
+
+
+
+void sortname()
+
+{
+
+    system("cls");
+
+    int i,j;
+
+    struct employee temp[max];
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        sortemp1[i]=emp[i];
+
+    }
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        for(j=0;j<=num-1;j++)
+
+        {
+
+            if(strcmp(sortemp1[i].name,sortemp1[j].name)<=0)
+
+            {
+
+                temp[i]=sortemp1[i];
+
+                sortemp1[i]=sortemp1[j];
+
+                sortemp1[j]=temp[i];
+
+            }
+
+        }
+
+    }
+
+
+    for( i=0;i<=num-1;i++)
+
+    {
+
+
+        cout<<"     Name     Code     Designation     Years(EXP)     Age ";
+
+        cout<<"     ------------------------------------------------------                                  ";
+
+        for( i=0;i<=num-1;i++)
+
+        {
+
+            cout<<setw(13)<<sortemp1[i].name;
+
+            cout<<setw(6)<<sortemp1[i].code;
+
+            cout<<setw(15)<<sortemp1[i].designation;
+
+            cout<<setw(10)<<sortemp1[i].exp;
+
+            cout<<setw(15)<<sortemp1[i].age;
+
+            cout<<endl;
+
+        }
+
+        cout<<"Press Any Key To Go Back";
+
+        getch();
+
+
+    } }
+
+
+void sortcode()
+
+{
+
+    system("cls");
+
+    int i,j;
+
+    struct employee temp[max];
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        sortemp1[i]=emp[i];
+
+    }
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        for(j=0;j<=num-1;j++)
+
+        {
+
+            if(sortemp1[i].code<sortemp1[j].code)
+
+            {
+
+                temp[i]=sortemp1[i];
+
+                sortemp1[i]=sortemp1[j];
+
+                sortemp1[j]=temp[i];
+
+            }
+
+        }
+
+    }
+
+
+    for( i=0;i<=num-1;i++)
+
+    {
+
+
+        cout<<"     Name     Code     Designation     Years(EXP)     Age ";
+
+        cout<<"     ------------------------------------------------------                                  ";
+
+        for( i=0;i<=num-1;i++)
+
+        {
+
+            cout<<setw(13)<<sortemp1[i].name;
+
+            cout<<setw(6)<<sortemp1[i].code;
+
+            cout<<setw(15)<<sortemp1[i].designation;
+
+            cout<<setw(10)<<sortemp1[i].exp;
+
+            cout<<setw(15)<<sortemp1[i].age;
+
+            cout<<endl;
+
+        }
+
+        cout<<"Press Any Key To Go Back";
+
+        getch();
+
+
+    } }
+
+
+
+void sortdes()
+
+{
+
+    system("cls");
+
+    int i,j;
+
+    struct employee temp[max];
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        sortemp1[i]=emp[i];
+
+    }
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        for(j=0;j<=num-1;j++)
+
+        {
+
+            if(strcmp(sortemp1[i].designation,sortemp1[j].designation)<=0)
+
+            {
+
+                temp[i]=sortemp1[i];
+
+                sortemp1[i]=sortemp1[j];
+
+                sortemp1[j]=temp[i];
+
+            }
+
+        }
+
+    }
+
+
+    for( i=0;i<=num-1;i++)
+
+    {
+
+
+        cout<<"     Name     Code     Designation     Years(EXP)     Age";
+
+        cout<<"     ------------------------------------------------------                                 ";
+
+        for( i=0;i<=num-1;i++)
+
+        {
+
+            cout<<setw(13)<<sortemp1[i].name;
+
+            cout<<setw(6)<<sortemp1[i].code;
+
+            cout<<setw(15)<<sortemp1[i].designation;
+
+            cout<<setw(10)<<sortemp1[i].exp;
+
+            cout<<setw(15)<<sortemp1[i].age;
+
+            cout<<endl;
+
+        }
+
+        cout<<"Press Any Key To Go Back";
+
+        getch();
+
+
+    } }
+
+
+void sortage()
+
+{
+
+    system("cls");
+
+    int i,j;
+
+    struct employee temp[max];
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        sortemp1[i]=emp[i];
+
+    }
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        for(j=0;j<=num-1;j++)
+
+        {
+
+            if(sortemp1[i].age<sortemp1[j].age)
+
+            {
+
+                temp[i]=sortemp1[i];
+
+                sortemp1[i]=sortemp1[j];
+
+                sortemp1[j]=temp[i];
+
+            }
+
+        }
+
+    }
+
+
+    for( i=0;i<=num-1;i++)
+
+    {
+
+
+        cout<<"     Name     Code     Designation     Years(EXP)     Age";
+
+        cout<<"     ------------------------------------------------------                                 ";
+
+        for( i=0;i<=num-1;i++)
+
+        {
+
+            cout<<setw(13)<<sortemp1[i].name;
+
+            cout<<setw(6)<<sortemp1[i].code;
+
+            cout<<setw(15)<<sortemp1[i].designation;
+
+            cout<<setw(10)<<sortemp1[i].exp;
+
+            cout<<setw(15)<<sortemp1[i].age;
+
+            cout<<endl;
+
+        }
+
+        cout<<"Press Any Key To Go Back";
+
+        getch();
+
+
+    } }
+
+
+
+void sortexp()
+
+{
+
+    system("cls");
+
+    int i,j;
+
+    struct employee temp[max];
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        sortemp1[i]=emp[i];
+
+    }
+
+    for(i=0;i<=num-1;i++)
+
+    {
+
+        for(j=0;j<=num-1;j++)
+
+        {
+
+            if(sortemp1[i].exp<sortemp1[j].exp)
+
+            {
+
+                temp[i]=sortemp1[i];
+
+                sortemp1[i]=sortemp1[j];
+
+                sortemp1[j]=temp[i];
+
+            }
+
+        }
+
+    }
+
+
+    for( i=0;i<=num-1;i++)
+
+    {
+
+
+        cout<<"     Name     Code     Designation     Years(EXP)     Age ";
+
+        cout<<"  ------------------------------------------------------ ";
+
+        for( i=0;i<=num-1;i++)
+
+        {
+
+            cout<<setw(13)<<sortemp1[i].name;
+
+            cout<<setw(6)<<sortemp1[i].code;
+
+            cout<<setw(15)<<sortemp1[i].designation;
+
+            cout<<setw(10)<<sortemp1[i].exp;
+
+            cout<<setw(15)<<sortemp1[i].age;
+
+            cout<<endl;
+
+        }
+
+        cout<<"Press Any Key To Go Back";
+
+        getch();
+
+
+    } }
+
+
+
